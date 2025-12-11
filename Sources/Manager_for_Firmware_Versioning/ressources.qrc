@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>ressources/volfo160.ico</file>
+        <file>ressources/ajout.png</file>
+        <file>ressources/delete.png</file>
+        <file>ressources/explications.png</file>
+        <file>ressources/help.png</file>
+        <file>ressources/tools.png</file>
+        <file>ressources/about.png</file>
+        <file>ressources/manager.png</file>
+        <file>manager.icns</file>
+    </qresource>
+</RCC>

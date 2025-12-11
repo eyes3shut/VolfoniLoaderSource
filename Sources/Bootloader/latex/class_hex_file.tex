@@ -1,0 +1,117 @@
+\hypertarget{class_hex_file}{\section{Hex\-File Class Reference}
+\label{class_hex_file}\index{Hex\-File@{Hex\-File}}
+}
+Inheritance diagram for Hex\-File\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hex_file}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_file_a45126261d6284508b7f8b7adcd4b6234}{void {\bfseries http\-Ready\-Read} ()}\label{class_hex_file_a45126261d6284508b7f8b7adcd4b6234}
+
+\item 
+\hypertarget{class_hex_file_a941e5944160c6a6e158c92d776fa6574}{int {\bfseries http\-Finished} ()}\label{class_hex_file_a941e5944160c6a6e158c92d776fa6574}
+
+\item 
+\hypertarget{class_hex_file_ad08c32c114a9a1ba59228752068d5104}{int {\bfseries http\-Firmware\-Finished} ()}\label{class_hex_file_ad08c32c114a9a1ba59228752068d5104}
+
+\item 
+\hypertarget{class_hex_file_a3e06e90dd72e45b5abf3f95db718d35d}{int {\bfseries Firmware\-Finished} ()}\label{class_hex_file_a3e06e90dd72e45b5abf3f95db718d35d}
+
+\item 
+\hypertarget{class_hex_file_ad5b0e652f194d628f3070a6f3be52a6d}{void {\bfseries slot\-Authentication\-Required} (Q\-Network\-Reply $\ast$, Q\-Authenticator $\ast$)}\label{class_hex_file_ad5b0e652f194d628f3070a6f3be52a6d}
+
+\item 
+\hypertarget{class_hex_file_ac9dc4ae1e988dae0c3c4e24ec7005f97}{void {\bfseries ssl\-Errors} (Q\-Network\-Reply $\ast$, const Q\-List$<$ Q\-Ssl\-Error $>$ \&)}\label{class_hex_file_ac9dc4ae1e988dae0c3c4e24ec7005f97}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_file_a9663c5fa153f0c94e77cba4335ad9c17}{void {\bfseries http\-Transfer\-Finished} ()}\label{class_hex_file_a9663c5fa153f0c94e77cba4335ad9c17}
+
+\item 
+\hypertarget{class_hex_file_a547a1a09c824a938a394551544bdc397}{void {\bfseries http\-Firmware\-Transfer\-Finished} ()}\label{class_hex_file_a547a1a09c824a938a394551544bdc397}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_file_a743b989fd26dcb12234814964ab6e56a}{{\bfseries Hex\-File} (\hyperlink{class_device}{Device} $\ast$device)}\label{class_hex_file_a743b989fd26dcb12234814964ab6e56a}
+
+\item 
+\hypertarget{class_hex_file_adb909c74620286cafc26a6f8f2c78cd3}{void {\bfseries Check\-Update} ()}\label{class_hex_file_adb909c74620286cafc26a6f8f2c78cd3}
+
+\item 
+\hypertarget{class_hex_file_a430841dca933d0db9ff16acdaddf91e3}{int {\bfseries Load\-File} (Q\-String)}\label{class_hex_file_a430841dca933d0db9ff16acdaddf91e3}
+
+\item 
+\hypertarget{class_hex_file_af218fa1c836bd6dfaccd52ac24a5c769}{\hyperlink{class_device_data}{Device\-Data} $\ast$ {\bfseries get\-Hex\-File\-Hex\-Data} ()}\label{class_hex_file_af218fa1c836bd6dfaccd52ac24a5c769}
+
+\item 
+\hypertarget{class_hex_file_aedec028c2fecb3b9f70b779bb7cbe242}{void {\bfseries http\-Firmware\-Update} (Q\-Url)}\label{class_hex_file_aedec028c2fecb3b9f70b779bb7cbe242}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_file_a055ca4ac7a9b099aa4764c7852767338}{void {\bfseries start\-Request\-Firmware} (Q\-Url)}\label{class_hex_file_a055ca4ac7a9b099aa4764c7852767338}
+
+\item 
+\hypertarget{class_hex_file_a12cf8b2776997c524ba1f762cc9b1143}{void {\bfseries start\-Request} (Q\-Url)}\label{class_hex_file_a12cf8b2776997c524ba1f762cc9b1143}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_file_aa8aa738c4fc3be10f38a783b1b275f33}{Q\-Url {\bfseries m\-\_\-url}}\label{class_hex_file_aa8aa738c4fc3be10f38a783b1b275f33}
+
+\item 
+\hypertarget{class_hex_file_a07cd5adf79994629872f81fd45e2dee3}{Q\-File $\ast$ {\bfseries m\-\_\-file}}\label{class_hex_file_a07cd5adf79994629872f81fd45e2dee3}
+
+\item 
+\hypertarget{class_hex_file_aa35238d419ce57fc484362b11ecbed78}{Q\-File $\ast$ {\bfseries m\-\_\-file\-Firmware}}\label{class_hex_file_aa35238d419ce57fc484362b11ecbed78}
+
+\item 
+\hypertarget{class_hex_file_ae339ea55e9e2c16a7fba550c58ea6e89}{Q\-Network\-Reply $\ast$ {\bfseries m\-\_\-reply}}\label{class_hex_file_ae339ea55e9e2c16a7fba550c58ea6e89}
+
+\item 
+\hypertarget{class_hex_file_a25fe62a624ff180d3a040899b1991133}{Q\-Network\-Access\-Manager {\bfseries m\-\_\-qnam}}\label{class_hex_file_a25fe62a624ff180d3a040899b1991133}
+
+\item 
+\hypertarget{class_hex_file_a6f7c997adef0fb56fd47be1d47db11a3}{Decrypt $\ast$ {\bfseries m\-\_\-decrypt}}\label{class_hex_file_a6f7c997adef0fb56fd47be1d47db11a3}
+
+\item 
+\hypertarget{class_hex_file_a63c8098dc8b70122c9d2910cb69b031d}{Encrypt $\ast$ {\bfseries m\-\_\-encrypt}}\label{class_hex_file_a63c8098dc8b70122c9d2910cb69b031d}
+
+\item 
+\hypertarget{class_hex_file_abf7bac27642ed5a850fd19ac687de43b}{\hyperlink{class_device_data}{Device\-Data} $\ast$ {\bfseries m\-\_\-hex\-Data}}\label{class_hex_file_abf7bac27642ed5a850fd19ac687de43b}
+
+\item 
+\hypertarget{class_hex_file_a33e7113fa5522b1505d11658cf242fc5}{\hyperlink{class_device}{Device} $\ast$ {\bfseries m\-\_\-device}}\label{class_hex_file_a33e7113fa5522b1505d11658cf242fc5}
+
+\item 
+\hypertarget{class_hex_file_aa815f5d06792323ffcb69a0072af2243}{bool {\bfseries m\-\_\-http\-Request\-Aborted}}\label{class_hex_file_aa815f5d06792323ffcb69a0072af2243}
+
+\item 
+\hypertarget{class_hex_file_a04877f998a2eb87d401cc58fd6ecbc07}{Q\-String {\bfseries m\-\_\-update\-Filename}}\label{class_hex_file_a04877f998a2eb87d401cc58fd6ecbc07}
+
+\item 
+\hypertarget{class_hex_file_a3ca80632e6b4b7aeda60b28db70429f5}{bool {\bfseries m\-\_\-local\-File}}\label{class_hex_file_a3ca80632e6b4b7aeda60b28db70429f5}
+
+\item 
+\hypertarget{class_hex_file_a2b2547962d58e635fe87c51a3ee132bb}{Q\-String {\bfseries m\-\_\-key\-Decrypt}}\label{class_hex_file_a2b2547962d58e635fe87c51a3ee132bb}
+
+\item 
+\hypertarget{class_hex_file_a7edae462ea6f1a21eeab38626e0f52a2}{Q\-String {\bfseries m\-\_\-debut\-Version}}\label{class_hex_file_a7edae462ea6f1a21eeab38626e0f52a2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+hexfile.\-h\item 
+hexfile.\-cpp\end{DoxyCompactItemize}

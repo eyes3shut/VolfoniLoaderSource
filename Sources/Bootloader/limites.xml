@@ -1,0 +1,15 @@
+<!DOCTYPE limits>
+<limites>
+	<minLCDVoltage>2</minLCDVoltage>
+	<maxLCDVoltage>27</maxLCDVoltage>
+	<minUPDelay>-5000</minUPDelay>
+	<maxUPDelay>5000</maxUPDelay>
+	<minDOWNDelay>-5000</minDOWNDelay>
+	<maxDOWNDelay>5000</maxDOWNDelay>
+	<minDelaSync>-5000</minDelaSync>
+	<maxDelaSync>5000</maxDelaSync>
+	<minShutterDelay>0</minShutterDelay>
+	<maxShutterDelay>3000</maxShutterDelay>
+	<minDeltaShutter>-1000</minDeltaShutter>
+	<maxDeltaShutter>1000</maxDeltaShutter>
+</limites>

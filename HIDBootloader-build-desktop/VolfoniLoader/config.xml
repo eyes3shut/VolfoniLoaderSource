@@ -1,0 +1,35 @@
+<!DOCTYPE config>
+<!-- Copyright (c) 2011 Volfoni. -->
+<!-- All rights reserved. -->
+<body>
+ <product>
+  <SerialNumber>AME-1-12-47-0nnnn</SerialNumber>
+  <FirmwareRev>IR_RF_V01.21.04</FirmwareRev>
+  <previousFirmwareRev></previousFirmwareRev>
+  <lastUpdateDate>2012/11/27 - 17:10:06</lastUpdateDate>
+ </product>
+ <product>
+  <SerialNumber>EDG-1-13-17-01037</SerialNumber>
+  <FirmwareRev>EDGRF_V01.02.02</FirmwareRev>
+  <previousFirmwareRev></previousFirmwareRev>
+  <lastUpdateDate>2014/03/03 - 13:30:02</lastUpdateDate>
+ </product>
+ <product>
+  <SerialNumber>AHU-2-13-47-00122</SerialNumber>
+  <FirmwareRev>__AHU_V06.04.00</FirmwareRev>
+  <previousFirmwareRev></previousFirmwareRev>
+  <lastUpdateDate>2014/03/10 - 16:33:20</lastUpdateDate>
+ </product>
+ <product>
+  <SerialNumber>EDG-1-14-07-00002</SerialNumber>
+  <FirmwareRev>EDGVR_V01.02.02</FirmwareRev>
+  <previousFirmwareRev></previousFirmwareRev>
+  <lastUpdateDate>2014/05/12 - 15:16:23</lastUpdateDate>
+ </product>
+ <product>
+  <SerialNumber>EDG-N-14-05-00001</SerialNumber>
+  <FirmwareRev>EDGVR_V01.02.02</FirmwareRev>
+  <previousFirmwareRev></previousFirmwareRev>
+  <lastUpdateDate>2015/12/21 - 13:20:17</lastUpdateDate>
+ </product>
+</body>

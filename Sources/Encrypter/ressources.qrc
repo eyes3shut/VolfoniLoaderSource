@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>ressources/encrypter.ico</file>
+        <file>encrypter.icns</file>
+    </qresource>
+</RCC>

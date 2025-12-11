@@ -1,0 +1,1275 @@
+\hypertarget{class_product}{\section{Product Class Reference}
+\label{class_product}\index{Product@{Product}}
+}
+Inheritance diagram for Product\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_product}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_product_a724d26e68fad4834a89089ee42475162}{void {\bfseries http\-Finished\-Slot} ()}\label{class_product_a724d26e68fad4834a89089ee42475162}
+
+\item 
+\hypertarget{class_product_a4fbd9ea34f0638e61d6a57a38e6529ff}{void {\bfseries http\-Firmware\-Finished\-Slot} ()}\label{class_product_a4fbd9ea34f0638e61d6a57a38e6529ff}
+
+\item 
+void \hyperlink{class_product_aa9c0e6fe872be85a4394b8f26cbf0478}{update\-Progress} (int value)
+\begin{DoxyCompactList}\small\item\em S\-L\-O\-T permettant de faire remonter de la classe C\-O\-M\-M l'état d'avancement d'une action. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a47f540589cdbbd34fb7db4dc2ee21aca}{readed\-Debug} (unsigned char $\ast$p\-Data)
+\begin{DoxyCompactList}\small\item\em Decode le message reçu par l'A\-H\-U et si un nouveau msg R\-F est présent emet le S\-I\-G\-N\-A\-L new\-Msg\-R\-F\-Available. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a7fd4eb92085eeb65994e07468ff7fc09}{set\-Debug\-Msg} (int length, unsigned char $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Prepare le message pour envoi à la E\-D\-G\-E R\-F. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_ad9a683ceabba5c0b21ca3906ca771c94}{get\-Debug\-Msg} ()
+\begin{DoxyCompactList}\small\item\em S\-L\-O\-T d'envoi du message R\-F. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_product_a733e1f112140709eba97bbc9625243e2}{void {\bfseries http\-Finished} ()}\label{class_product_a733e1f112140709eba97bbc9625243e2}
+
+\item 
+\hypertarget{class_product_af66232c13f2b59a387a683459379c7bc}{void {\bfseries http\-Update\-Finished} ()}\label{class_product_af66232c13f2b59a387a683459379c7bc}
+
+\item 
+\hypertarget{class_product_a556943356ab7f62a108fbd3a419d37af}{void {\bfseries set\-Progress} (int new\-Value)}\label{class_product_a556943356ab7f62a108fbd3a419d37af}
+
+\item 
+\hypertarget{class_product_a66d631794c5cf7744050dad4e127a406}{void {\bfseries set\-Msg\-To\-I\-H\-M} (Q\-String message)}\label{class_product_a66d631794c5cf7744050dad4e127a406}
+
+\item 
+\hypertarget{class_product_a618c8895bb3312afc99247fcd29f6cbd}{void {\bfseries new\-Data\-Available} ()}\label{class_product_a618c8895bb3312afc99247fcd29f6cbd}
+
+\item 
+\hypertarget{class_product_a1d3ff0cbc9d073f877a28c02016a4328}{void {\bfseries get\-Debug\-Msg\-Signal} (int, unsigned char $\ast$)}\label{class_product_a1d3ff0cbc9d073f877a28c02016a4328}
+
+\item 
+\hypertarget{class_product_a107fa3bc98419bcdd600f8231f241de1}{void {\bfseries new\-Msg\-R\-F\-Available} (unsigned char $\ast$)}\label{class_product_a107fa3bc98419bcdd600f8231f241de1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_product_a847c1d85e67ce387166a597579a55135}{Product} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_product_abe0afd3bea96d979185ec2cfdf681e6f}{$\sim$\-Product} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_ab912bcb38d3de01e60b1a0a24e3418a6}{poll\-U\-S\-B} (void)
+\begin{DoxyCompactList}\small\item\em Effectue une connection en mode bootloader. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a26ece9ea70849a794d02b5d324cf498e}{poll\-U\-S\-B\-App} (void)
+\begin{DoxyCompactList}\small\item\em Effectue une connection en mode applicatif. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a24d5d6daefd67c6de5adb55e56839675}{close} (void)
+\begin{DoxyCompactList}\small\item\em Ferme la liaison avec le device. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_a6991c480f1b54d06b6364332f213df49}{is\-Connected} (void)
+\begin{DoxyCompactList}\small\item\em Verifit si un device est connecte en mode bootloader. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_a576483da5e5944250917625ea28cd8a2}{is\-Connected\-App} (void)
+\begin{DoxyCompactList}\small\item\em Verifit si un device est connecte en mode applicatif. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_aa456509379eedb72ac503ac612c403f2}{open} (void)
+\begin{DoxyCompactList}\small\item\em Ouvre un device connecté en mode bootloader. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_ac75ca334f758e0d0ced0d3cd507cb968}{open\-App} (void)
+\begin{DoxyCompactList}\small\item\em Ouvre un device connecté en mode applicatif. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_adecd9953ee3041025133eadb2d0d0f57}{lock\-Unlock\-Config} (bool)
+\begin{DoxyCompactList}\small\item\em Lock / Unlock les bits de configuration du P\-I\-C18\-F. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_a7a24b886c1e8467f6ca856ec3456d6b8}{program\-Param} (unsigned char $\ast$p\-Data)
+\begin{DoxyCompactList}\small\item\em Ecriture des paramètres du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_ac726e6c9087c93c9d5a2922dc846cb2b}{read\-Param} (unsigned char $\ast$p\-Data)
+\begin{DoxyCompactList}\small\item\em Lecture des paramètres du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_ae522c8bd380c0e146e9b81067d105ead}{inversion\-G\-D} ()
+\begin{DoxyCompactList}\small\item\em Commande d'inversion Gauche / Droite. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a46a283ff693b167100618bba2eee2ca5}{connection} (void)
+\begin{DoxyCompactList}\small\item\em Ouvre une liaison avec le device connecté au P\-C. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_af31bf371509c196c38895eb76327eea8}{change\-Part\-Number} (Q\-String new\-One)
+\begin{DoxyCompactList}\small\item\em Fonction qui change le numéro de série du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_acc420398c5a432bd55303f3e36753bd1}{change\-Customer\-Number} (Q\-String new\-One)
+\begin{DoxyCompactList}\small\item\em Fonction qui change le customer number du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_aef536aa913ded637d649e28c4cd69f8a}{read\-Param\-Flash} (unsigned char $\ast$p\-Data, unsigned char $\ast$p\-Data2)
+\begin{DoxyCompactList}\small\item\em Lecture des paramètres inscrits en F\-L\-A\-S\-H du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_a90819f3c458fec7a911a785c93643cd3}{program\-Param\-Flash} (unsigned char $\ast$p\-Data)
+\begin{DoxyCompactList}\small\item\em Ecriture des paramètres en F\-L\-A\-S\-H du device. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a0b7d8655f24efa5907c904e4530e5219}{reset\-Device} ()
+\begin{DoxyCompactList}\small\item\em Reset le device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_a056ec761c60d90fdbbca3e5bdee7cd16}{write\-Device} ()
+\begin{DoxyCompactList}\small\item\em Ecrit le fichier chargé en R\-A\-M dans la F\-L\-A\-S\-H du device. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_adc0d075e2ee1ab37d252f363b0ac4e9e}{verify\-Device} (\hyperlink{class_device_data}{Device\-Data} $\ast$)
+\begin{DoxyCompactList}\small\item\em Vérifit que le fichier chargé en R\-A\-M est bien programmé en F\-L\-A\-S\-H du device. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_a268612d8eb5db5b5bd41c982f1d0054c}{read\-Firmware\-Data} ()
+\begin{DoxyCompactList}\small\item\em Lit les informations firmware du device. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a8d49c247e4cb67451c365cb8f4379f13}{get\-Query} ()
+\begin{DoxyCompactList}\small\item\em Demande ses informations au device. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a6efc7874197a089330a51182da5ada33}{check\-Update} ()
+\begin{DoxyCompactList}\small\item\em Verifit si une version plus récente du firmware est présente sur le serveur Volfoni. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_af12fcb251cb2e01f8828adc642333ddb}{start\-Request\-Firmware} (Q\-Url)
+\begin{DoxyCompactList}\small\item\em Telecharge un fichier depuis le serveur Volfoni. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a427c89793163ed1364760f14ce2c24fa}{Firmware\-Finished} ()
+\begin{DoxyCompactList}\small\item\em Charge en R\-A\-M le fichier de mise à jour qui vient d'être téléchergé depuis le serveur Volfoni. \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_aebba56fbe77dafe20a28aec8678c3c57}{read\-Memory} ()
+\begin{DoxyCompactList}\small\item\em Lecture en mémoire du device de l'adresse 0x1000 à 0x7\-B\-F\-F (taille = 0x6\-C00) \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_a75eb721fcc111f39d4ce2f5f0f705443}{write\-Memory} (Q\-String Serial\-Number)
+\begin{DoxyCompactList}\small\item\em Ecriture en mémoire du device de l'adresse 0x1000 à 0x7\-B\-F\-F (taille = 0x6\-C00) \end{DoxyCompactList}\item 
+Comm\-::\-Error\-Code \hyperlink{class_product_ace747cc05f3c235477db62e7ac8035cb}{erase\-Device} (void)
+\begin{DoxyCompactList}\small\item\em Efface le device. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a6ff98382fbc35d270d599de9ae4f5648}{Load\-File} (Q\-String new\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Charge en R\-A\-M le fichier H\-E\-X a ecrire. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_product_a6d21a48ce50e47fd93fe5a57f4423e38}{get\-Product\-Customer\-Number} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-customer\-Number. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_product_a5c3d92c5b17a43dd227538b6bfda94e0}{get\-Product\-Firmware\-Rev} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-firmware\-Rev. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_product_a531beaaf8865b6de2505287c3a8702a4}{get\-Product\-Serial\-Number} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-serial\-Number. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_product_a5c6a594f42e4b72e18ea9bd47c1de012}{get\-Product\-Bootloader\-Rev} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-bootloader\-Rev. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_ae080556ac9d19c41d1d855094ed7f9ee}{get\-Product\-Updating} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-updating. \end{DoxyCompactList}\item 
+void \hyperlink{class_product_a5a5e6d45e85d396762a8cdba05fe7ede}{set\-Product\-Updating} (bool)
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-updating. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a1c342fe17e706c021a14b1a53ae6f991}{get\-Product\-Machine\-Etat} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-machine\-Etat. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a8951ac92ebef2d33c722cbcfd30fbadd}{get\-Product\-Patern\-I\-R} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-patern\-I\-R. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a613a5a6eb12242d74dc7f00e03f9af61}{get\-Product\-Gain\-I\-R} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-gain\-I\-R. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_a3e787347e7fe7ba2585adf46b73939d6}{get\-Product\-Type\-Synchro} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-type\-Synchro. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_a2f860ab6b868d15dea57b8ac55821a84}{get\-Product\-Autotest} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-autotest. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_adf86d2d22238aceecde94d8bfbaf9661}{get\-Product\-Absence\-I\-R\-D\-L\-P} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-absence\-I\-R\-D\-L\-P. \end{DoxyCompactList}\item 
+int \hyperlink{class_product_af49eb4c983cd85ec49fbeae8dcd78a2a}{get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-type\-F\-U\-L\-L\-H\-D3\-D. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_aaff5d6d4e2cbba827dac9d542a108a5a}{get\-Product\-Searching\-I\-R} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-searching\-I\-R. \end{DoxyCompactList}\item 
+bool \hyperlink{class_product_a63499a93bacc4e900b7de4a8fb1a4426}{get\-Product\-Searching\-R\-F} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-searching\-R\-F. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{class_product_a04c4435bb68d040f5a70675cafe48052}{get\-Product\-Message\-R\-F} ()
+\begin{DoxyCompactList}\small\item\em Fonction d'acces au membre m\-\_\-message\-R\-F. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_product_a6c47d116628a26ab4699cd8f8b0b48be}{\hyperlink{class_comm}{Comm} $\ast$ {\bfseries comm}}\label{class_product_a6c47d116628a26ab4699cd8f8b0b48be}
+
+\item 
+\hypertarget{class_product_a71e3a2b54e3c91bc3eeffdc513cc4bd7}{\hyperlink{class_device_data}{Device\-Data} $\ast$ {\bfseries device\-Data}}\label{class_product_a71e3a2b54e3c91bc3eeffdc513cc4bd7}
+
+\item 
+\hypertarget{class_product_a6960c3bc399b28dd3943ebef208170dc}{\hyperlink{class_device}{Device} $\ast$ {\bfseries device}}\label{class_product_a6960c3bc399b28dd3943ebef208170dc}
+
+\item 
+\hypertarget{class_product_a26a7f6291f19781724f0b18f6ac1b73d}{\hyperlink{class_hex_file}{Hex\-File} $\ast$ {\bfseries hex\-File}}\label{class_product_a26a7f6291f19781724f0b18f6ac1b73d}
+
+\item 
+\hypertarget{class_product_abf0cb068939d5d405ddd66c3c7af63ef}{Q\-String {\bfseries m\-\_\-firmware\-Rev}}\label{class_product_abf0cb068939d5d405ddd66c3c7af63ef}
+
+\item 
+\hypertarget{class_product_a9c7689dc64c502fd60208e202c1d9573}{Q\-String {\bfseries m\-\_\-bootloader\-Rev}}\label{class_product_a9c7689dc64c502fd60208e202c1d9573}
+
+\item 
+\hypertarget{class_product_a4ecc1b38a18fbbb7672154515b3aa743}{Q\-String {\bfseries m\-\_\-previous\-Rev}}\label{class_product_a4ecc1b38a18fbbb7672154515b3aa743}
+
+\item 
+\hypertarget{class_product_ae28c1f66405c911a2cb9bae8bc44600e}{Q\-String {\bfseries m\-\_\-serial\-Number}}\label{class_product_ae28c1f66405c911a2cb9bae8bc44600e}
+
+\item 
+\hypertarget{class_product_ae7d5f98d4f8effe5a371569e639082ee}{Q\-String {\bfseries m\-\_\-customer\-Number}}\label{class_product_ae7d5f98d4f8effe5a371569e639082ee}
+
+\item 
+\hypertarget{class_product_ab897c77125bd5e3f7470657a88f604fd}{bool {\bfseries m\-\_\-updating}}\label{class_product_ab897c77125bd5e3f7470657a88f604fd}
+
+\item 
+\hypertarget{class_product_a369384e04526540feebbea8340796140}{int {\bfseries m\-\_\-machine\-Etat}}\label{class_product_a369384e04526540feebbea8340796140}
+
+\item 
+\hypertarget{class_product_a398213cfb921a7a94a107df86ac43919}{int {\bfseries m\-\_\-patern\-I\-R}}\label{class_product_a398213cfb921a7a94a107df86ac43919}
+
+\item 
+\hypertarget{class_product_a7505fd1b3cb62b151b1b433fe9256abf}{int {\bfseries m\-\_\-gain\-I\-R}}\label{class_product_a7505fd1b3cb62b151b1b433fe9256abf}
+
+\item 
+\hypertarget{class_product_afff4c2743888e20fc763c947f7b5175b}{int {\bfseries m\-\_\-type\-Synchro}}\label{class_product_afff4c2743888e20fc763c947f7b5175b}
+
+\item 
+\hypertarget{class_product_a6dc7410f702e12c5cea675cace8cb788}{bool {\bfseries m\-\_\-autotest}}\label{class_product_a6dc7410f702e12c5cea675cace8cb788}
+
+\item 
+\hypertarget{class_product_a95f271581f50b4f9d5dc0b6926df1a48}{bool {\bfseries m\-\_\-absence\-I\-R\-D\-L\-P}}\label{class_product_a95f271581f50b4f9d5dc0b6926df1a48}
+
+\item 
+\hypertarget{class_product_a1bdbf8d38f7cc4c1d55fbb08fb8b7830}{int {\bfseries m\-\_\-type\-F\-U\-L\-L\-H\-D3\-D}}\label{class_product_a1bdbf8d38f7cc4c1d55fbb08fb8b7830}
+
+\item 
+\hypertarget{class_product_a62e44bc1a702279904b6e02121acd0dd}{bool {\bfseries m\-\_\-searching\-I\-R}}\label{class_product_a62e44bc1a702279904b6e02121acd0dd}
+
+\item 
+\hypertarget{class_product_a4f4ad5a4a6127b6165d80f82961b0c6c}{bool {\bfseries m\-\_\-searching\-R\-F}}\label{class_product_a4f4ad5a4a6127b6165d80f82961b0c6c}
+
+\item 
+\hypertarget{class_product_a7c28563a44aa4623a687c4f3a58a9ec4}{unsigned char {\bfseries m\-\_\-message\-R\-F} \mbox{[}21\mbox{]}}\label{class_product_a7c28563a44aa4623a687c4f3a58a9ec4}
+
+\item 
+\hypertarget{class_product_a7cd1af5bb70da869a3f883d5095f28dd}{int {\bfseries m\-\_\-length\-R\-F}}\label{class_product_a7cd1af5bb70da869a3f883d5095f28dd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_product_a847c1d85e67ce387166a597579a55135}{\index{Product@{Product}!Product@{Product}}
+\index{Product@{Product}!Product@{Product}}
+\subsubsection[{Product}]{\setlength{\rightskip}{0pt plus 5cm}Product\-::\-Product (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_product_a847c1d85e67ce387166a597579a55135}
+
+
+Constructeur. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_abe0afd3bea96d979185ec2cfdf681e6f}{\index{Product@{Product}!$\sim$\-Product@{$\sim$\-Product}}
+\index{$\sim$\-Product@{$\sim$\-Product}!Product@{Product}}
+\subsubsection[{$\sim$\-Product}]{\setlength{\rightskip}{0pt plus 5cm}Product\-::$\sim$\-Product (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_abe0afd3bea96d979185ec2cfdf681e6f}
+
+
+Destructeur. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_product_acc420398c5a432bd55303f3e36753bd1}{\index{Product@{Product}!change\-Customer\-Number@{change\-Customer\-Number}}
+\index{change\-Customer\-Number@{change\-Customer\-Number}!Product@{Product}}
+\subsubsection[{change\-Customer\-Number}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::change\-Customer\-Number (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{new\-One}
+\end{DoxyParamCaption}
+)}}\label{class_product_acc420398c5a432bd55303f3e36753bd1}
+
+
+Fonction qui change le customer number du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em new\-One} & = string contenant le numéro a ecrire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_af31bf371509c196c38895eb76327eea8}{\index{Product@{Product}!change\-Part\-Number@{change\-Part\-Number}}
+\index{change\-Part\-Number@{change\-Part\-Number}!Product@{Product}}
+\subsubsection[{change\-Part\-Number}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::change\-Part\-Number (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{new\-One}
+\end{DoxyParamCaption}
+)}}\label{class_product_af31bf371509c196c38895eb76327eea8}
+
+
+Fonction qui change le numéro de série du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em new\-One} & = string contenant le numéro a ecrire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a6efc7874197a089330a51182da5ada33}{\index{Product@{Product}!check\-Update@{check\-Update}}
+\index{check\-Update@{check\-Update}!Product@{Product}}
+\subsubsection[{check\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::check\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a6efc7874197a089330a51182da5ada33}
+
+
+Verifit si une version plus récente du firmware est présente sur le serveur Volfoni. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a24d5d6daefd67c6de5adb55e56839675}{\index{Product@{Product}!close@{close}}
+\index{close@{close}!Product@{Product}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a24d5d6daefd67c6de5adb55e56839675}
+
+
+Ferme la liaison avec le device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a46a283ff693b167100618bba2eee2ca5}{\index{Product@{Product}!connection@{connection}}
+\index{connection@{connection}!Product@{Product}}
+\subsubsection[{connection}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::connection (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a46a283ff693b167100618bba2eee2ca5}
+
+
+Ouvre une liaison avec le device connecté au P\-C. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ace747cc05f3c235477db62e7ac8035cb}{\index{Product@{Product}!erase\-Device@{erase\-Device}}
+\index{erase\-Device@{erase\-Device}!Product@{Product}}
+\subsubsection[{erase\-Device}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::erase\-Device (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_ace747cc05f3c235477db62e7ac8035cb}
+
+
+Efface le device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success si O\-K, sinon Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a427c89793163ed1364760f14ce2c24fa}{\index{Product@{Product}!Firmware\-Finished@{Firmware\-Finished}}
+\index{Firmware\-Finished@{Firmware\-Finished}!Product@{Product}}
+\subsubsection[{Firmware\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::\-Firmware\-Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a427c89793163ed1364760f14ce2c24fa}
+
+
+Charge en R\-A\-M le fichier de mise à jour qui vient d'être téléchergé depuis le serveur Volfoni. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ad9a683ceabba5c0b21ca3906ca771c94}{\index{Product@{Product}!get\-Debug\-Msg@{get\-Debug\-Msg}}
+\index{get\-Debug\-Msg@{get\-Debug\-Msg}!Product@{Product}}
+\subsubsection[{get\-Debug\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::get\-Debug\-Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_product_ad9a683ceabba5c0b21ca3906ca771c94}
+
+
+S\-L\-O\-T d'envoi du message R\-F. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_adf86d2d22238aceecde94d8bfbaf9661}{\index{Product@{Product}!get\-Product\-Absence\-I\-R\-D\-L\-P@{get\-Product\-Absence\-I\-R\-D\-L\-P}}
+\index{get\-Product\-Absence\-I\-R\-D\-L\-P@{get\-Product\-Absence\-I\-R\-D\-L\-P}!Product@{Product}}
+\subsubsection[{get\-Product\-Absence\-I\-R\-D\-L\-P}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::get\-Product\-Absence\-I\-R\-D\-L\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_adf86d2d22238aceecde94d8bfbaf9661}
+
+
+Fonction d'acces au membre m\-\_\-absence\-I\-R\-D\-L\-P. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-absence\-I\-R\-D\-L\-P
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a2f860ab6b868d15dea57b8ac55821a84}{\index{Product@{Product}!get\-Product\-Autotest@{get\-Product\-Autotest}}
+\index{get\-Product\-Autotest@{get\-Product\-Autotest}!Product@{Product}}
+\subsubsection[{get\-Product\-Autotest}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::get\-Product\-Autotest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a2f860ab6b868d15dea57b8ac55821a84}
+
+
+Fonction d'acces au membre m\-\_\-autotest. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-autotest
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a5c6a594f42e4b72e18ea9bd47c1de012}{\index{Product@{Product}!get\-Product\-Bootloader\-Rev@{get\-Product\-Bootloader\-Rev}}
+\index{get\-Product\-Bootloader\-Rev@{get\-Product\-Bootloader\-Rev}!Product@{Product}}
+\subsubsection[{get\-Product\-Bootloader\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Product\-::get\-Product\-Bootloader\-Rev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a5c6a594f42e4b72e18ea9bd47c1de012}
+
+
+Fonction d'acces au membre m\-\_\-bootloader\-Rev. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-bootloader\-Rev
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a6d21a48ce50e47fd93fe5a57f4423e38}{\index{Product@{Product}!get\-Product\-Customer\-Number@{get\-Product\-Customer\-Number}}
+\index{get\-Product\-Customer\-Number@{get\-Product\-Customer\-Number}!Product@{Product}}
+\subsubsection[{get\-Product\-Customer\-Number}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Product\-::get\-Product\-Customer\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a6d21a48ce50e47fd93fe5a57f4423e38}
+
+
+Fonction d'acces au membre m\-\_\-customer\-Number. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-customer\-Number
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a5c3d92c5b17a43dd227538b6bfda94e0}{\index{Product@{Product}!get\-Product\-Firmware\-Rev@{get\-Product\-Firmware\-Rev}}
+\index{get\-Product\-Firmware\-Rev@{get\-Product\-Firmware\-Rev}!Product@{Product}}
+\subsubsection[{get\-Product\-Firmware\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Product\-::get\-Product\-Firmware\-Rev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a5c3d92c5b17a43dd227538b6bfda94e0}
+
+
+Fonction d'acces au membre m\-\_\-firmware\-Rev. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-firmware\-Rev
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a613a5a6eb12242d74dc7f00e03f9af61}{\index{Product@{Product}!get\-Product\-Gain\-I\-R@{get\-Product\-Gain\-I\-R}}
+\index{get\-Product\-Gain\-I\-R@{get\-Product\-Gain\-I\-R}!Product@{Product}}
+\subsubsection[{get\-Product\-Gain\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::get\-Product\-Gain\-I\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a613a5a6eb12242d74dc7f00e03f9af61}
+
+
+Fonction d'acces au membre m\-\_\-gain\-I\-R. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-gain\-I\-R
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a1c342fe17e706c021a14b1a53ae6f991}{\index{Product@{Product}!get\-Product\-Machine\-Etat@{get\-Product\-Machine\-Etat}}
+\index{get\-Product\-Machine\-Etat@{get\-Product\-Machine\-Etat}!Product@{Product}}
+\subsubsection[{get\-Product\-Machine\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::get\-Product\-Machine\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a1c342fe17e706c021a14b1a53ae6f991}
+
+
+Fonction d'acces au membre m\-\_\-machine\-Etat. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-machine\-Etat
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a04c4435bb68d040f5a70675cafe48052}{\index{Product@{Product}!get\-Product\-Message\-R\-F@{get\-Product\-Message\-R\-F}}
+\index{get\-Product\-Message\-R\-F@{get\-Product\-Message\-R\-F}!Product@{Product}}
+\subsubsection[{get\-Product\-Message\-R\-F}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ Product\-::get\-Product\-Message\-R\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a04c4435bb68d040f5a70675cafe48052}
+
+
+Fonction d'acces au membre m\-\_\-message\-R\-F. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-message\-R\-F
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a8951ac92ebef2d33c722cbcfd30fbadd}{\index{Product@{Product}!get\-Product\-Patern\-I\-R@{get\-Product\-Patern\-I\-R}}
+\index{get\-Product\-Patern\-I\-R@{get\-Product\-Patern\-I\-R}!Product@{Product}}
+\subsubsection[{get\-Product\-Patern\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::get\-Product\-Patern\-I\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a8951ac92ebef2d33c722cbcfd30fbadd}
+
+
+Fonction d'acces au membre m\-\_\-patern\-I\-R. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-patern\-I\-R
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_aaff5d6d4e2cbba827dac9d542a108a5a}{\index{Product@{Product}!get\-Product\-Searching\-I\-R@{get\-Product\-Searching\-I\-R}}
+\index{get\-Product\-Searching\-I\-R@{get\-Product\-Searching\-I\-R}!Product@{Product}}
+\subsubsection[{get\-Product\-Searching\-I\-R}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::get\-Product\-Searching\-I\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_aaff5d6d4e2cbba827dac9d542a108a5a}
+
+
+Fonction d'acces au membre m\-\_\-searching\-I\-R. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-searching\-I\-R
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a63499a93bacc4e900b7de4a8fb1a4426}{\index{Product@{Product}!get\-Product\-Searching\-R\-F@{get\-Product\-Searching\-R\-F}}
+\index{get\-Product\-Searching\-R\-F@{get\-Product\-Searching\-R\-F}!Product@{Product}}
+\subsubsection[{get\-Product\-Searching\-R\-F}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::get\-Product\-Searching\-R\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a63499a93bacc4e900b7de4a8fb1a4426}
+
+
+Fonction d'acces au membre m\-\_\-searching\-R\-F. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-searching\-R\-F
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a531beaaf8865b6de2505287c3a8702a4}{\index{Product@{Product}!get\-Product\-Serial\-Number@{get\-Product\-Serial\-Number}}
+\index{get\-Product\-Serial\-Number@{get\-Product\-Serial\-Number}!Product@{Product}}
+\subsubsection[{get\-Product\-Serial\-Number}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Product\-::get\-Product\-Serial\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a531beaaf8865b6de2505287c3a8702a4}
+
+
+Fonction d'acces au membre m\-\_\-serial\-Number. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-serial\-Number
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_af49eb4c983cd85ec49fbeae8dcd78a2a}{\index{Product@{Product}!get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D@{get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D}}
+\index{get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D@{get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D}!Product@{Product}}
+\subsubsection[{get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::get\-Product\-Type\-F\-U\-L\-L\-H\-D3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_af49eb4c983cd85ec49fbeae8dcd78a2a}
+
+
+Fonction d'acces au membre m\-\_\-type\-F\-U\-L\-L\-H\-D3\-D. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-type\-F\-U\-L\-L\-H\-D3\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a3e787347e7fe7ba2585adf46b73939d6}{\index{Product@{Product}!get\-Product\-Type\-Synchro@{get\-Product\-Type\-Synchro}}
+\index{get\-Product\-Type\-Synchro@{get\-Product\-Type\-Synchro}!Product@{Product}}
+\subsubsection[{get\-Product\-Type\-Synchro}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::get\-Product\-Type\-Synchro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a3e787347e7fe7ba2585adf46b73939d6}
+
+
+Fonction d'acces au membre m\-\_\-type\-Synchro. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-type\-Synchro
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ae080556ac9d19c41d1d855094ed7f9ee}{\index{Product@{Product}!get\-Product\-Updating@{get\-Product\-Updating}}
+\index{get\-Product\-Updating@{get\-Product\-Updating}!Product@{Product}}
+\subsubsection[{get\-Product\-Updating}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::get\-Product\-Updating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_ae080556ac9d19c41d1d855094ed7f9ee}
+
+
+Fonction d'acces au membre m\-\_\-updating. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\-\_\-updating
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a8d49c247e4cb67451c365cb8f4379f13}{\index{Product@{Product}!get\-Query@{get\-Query}}
+\index{get\-Query@{get\-Query}!Product@{Product}}
+\subsubsection[{get\-Query}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::get\-Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a8d49c247e4cb67451c365cb8f4379f13}
+
+
+Demande ses informations au device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ae522c8bd380c0e146e9b81067d105ead}{\index{Product@{Product}!inversion\-G\-D@{inversion\-G\-D}}
+\index{inversion\-G\-D@{inversion\-G\-D}!Product@{Product}}
+\subsubsection[{inversion\-G\-D}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::inversion\-G\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_ae522c8bd380c0e146e9b81067d105ead}
+
+
+Commande d'inversion Gauche / Droite. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a6991c480f1b54d06b6364332f213df49}{\index{Product@{Product}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!Product@{Product}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::is\-Connected (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a6991c480f1b54d06b6364332f213df49}
+
+
+Verifit si un device est connecte en mode bootloader. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a576483da5e5944250917625ea28cd8a2}{\index{Product@{Product}!is\-Connected\-App@{is\-Connected\-App}}
+\index{is\-Connected\-App@{is\-Connected\-App}!Product@{Product}}
+\subsubsection[{is\-Connected\-App}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::is\-Connected\-App (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a576483da5e5944250917625ea28cd8a2}
+
+
+Verifit si un device est connecte en mode applicatif. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a6ff98382fbc35d270d599de9ae4f5648}{\index{Product@{Product}!Load\-File@{Load\-File}}
+\index{Load\-File@{Load\-File}!Product@{Product}}
+\subsubsection[{Load\-File}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::\-Load\-File (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{new\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_product_a6ff98382fbc35d270d599de9ae4f5648}
+
+
+Charge en R\-A\-M le fichier H\-E\-X a ecrire. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em new\-File\-Name} & = chemin et nom du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1=O\-K, 0 sinon
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_adecd9953ee3041025133eadb2d0d0f57}{\index{Product@{Product}!lock\-Unlock\-Config@{lock\-Unlock\-Config}}
+\index{lock\-Unlock\-Config@{lock\-Unlock\-Config}!Product@{Product}}
+\subsubsection[{lock\-Unlock\-Config}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::lock\-Unlock\-Config (
+\begin{DoxyParamCaption}
+\item[{bool}]{lock}
+\end{DoxyParamCaption}
+)}}\label{class_product_adecd9953ee3041025133eadb2d0d0f57}
+
+
+Lock / Unlock les bits de configuration du P\-I\-C18\-F. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em lock} & = empeche l'ecriture si true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_aa456509379eedb72ac503ac612c403f2}{\index{Product@{Product}!open@{open}}
+\index{open@{open}!Product@{Product}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_aa456509379eedb72ac503ac612c403f2}
+
+
+Ouvre un device connecté en mode bootloader. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ac75ca334f758e0d0ced0d3cd507cb968}{\index{Product@{Product}!open\-App@{open\-App}}
+\index{open\-App@{open\-App}!Product@{Product}}
+\subsubsection[{open\-App}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::open\-App (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_ac75ca334f758e0d0ced0d3cd507cb968}
+
+
+Ouvre un device connecté en mode applicatif. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ab912bcb38d3de01e60b1a0a24e3418a6}{\index{Product@{Product}!poll\-U\-S\-B@{poll\-U\-S\-B}}
+\index{poll\-U\-S\-B@{poll\-U\-S\-B}!Product@{Product}}
+\subsubsection[{poll\-U\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::poll\-U\-S\-B (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_ab912bcb38d3de01e60b1a0a24e3418a6}
+
+
+Effectue une connection en mode bootloader. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a26ece9ea70849a794d02b5d324cf498e}{\index{Product@{Product}!poll\-U\-S\-B\-App@{poll\-U\-S\-B\-App}}
+\index{poll\-U\-S\-B\-App@{poll\-U\-S\-B\-App}!Product@{Product}}
+\subsubsection[{poll\-U\-S\-B\-App}]{\setlength{\rightskip}{0pt plus 5cm}int Product\-::poll\-U\-S\-B\-App (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a26ece9ea70849a794d02b5d324cf498e}
+
+
+Effectue une connection en mode applicatif. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-D
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a7a24b886c1e8467f6ca856ec3456d6b8}{\index{Product@{Product}!program\-Param@{program\-Param}}
+\index{program\-Param@{program\-Param}!Product@{Product}}
+\subsubsection[{program\-Param}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::program\-Param (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{class_product_a7a24b886c1e8467f6ca856ec3456d6b8}
+
+
+Ecriture des paramètres du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & = Buffer de données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a90819f3c458fec7a911a785c93643cd3}{\index{Product@{Product}!program\-Param\-Flash@{program\-Param\-Flash}}
+\index{program\-Param\-Flash@{program\-Param\-Flash}!Product@{Product}}
+\subsubsection[{program\-Param\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::program\-Param\-Flash (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{class_product_a90819f3c458fec7a911a785c93643cd3}
+
+
+Ecriture des paramètres en F\-L\-A\-S\-H du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & = buffer de données 0x1011-\/$>$0x1028 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a47f540589cdbbd34fb7db4dc2ee21aca}{\index{Product@{Product}!readed\-Debug@{readed\-Debug}}
+\index{readed\-Debug@{readed\-Debug}!Product@{Product}}
+\subsubsection[{readed\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::readed\-Debug (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_product_a47f540589cdbbd34fb7db4dc2ee21aca}
+
+
+Decode le message reçu par l'A\-H\-U et si un nouveau msg R\-F est présent emet le S\-I\-G\-N\-A\-L new\-Msg\-R\-F\-Available. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & = buffer contenant le msg reçu par l'A\-H\-U \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a268612d8eb5db5b5bd41c982f1d0054c}{\index{Product@{Product}!read\-Firmware\-Data@{read\-Firmware\-Data}}
+\index{read\-Firmware\-Data@{read\-Firmware\-Data}!Product@{Product}}
+\subsubsection[{read\-Firmware\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::read\-Firmware\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a268612d8eb5db5b5bd41c982f1d0054c}
+
+
+Lit les informations firmware du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_aebba56fbe77dafe20a28aec8678c3c57}{\index{Product@{Product}!read\-Memory@{read\-Memory}}
+\index{read\-Memory@{read\-Memory}!Product@{Product}}
+\subsubsection[{read\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::read\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_aebba56fbe77dafe20a28aec8678c3c57}
+
+
+Lecture en mémoire du device de l'adresse 0x1000 à 0x7\-B\-F\-F (taille = 0x6\-C00) 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_ac726e6c9087c93c9d5a2922dc846cb2b}{\index{Product@{Product}!read\-Param@{read\-Param}}
+\index{read\-Param@{read\-Param}!Product@{Product}}
+\subsubsection[{read\-Param}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::read\-Param (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Data}
+\end{DoxyParamCaption}
+)}}\label{class_product_ac726e6c9087c93c9d5a2922dc846cb2b}
+
+
+Lecture des paramètres du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & = Buffer de données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_aef536aa913ded637d649e28c4cd69f8a}{\index{Product@{Product}!read\-Param\-Flash@{read\-Param\-Flash}}
+\index{read\-Param\-Flash@{read\-Param\-Flash}!Product@{Product}}
+\subsubsection[{read\-Param\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::read\-Param\-Flash (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Data, }
+\item[{unsigned char $\ast$}]{p\-Data2}
+\end{DoxyParamCaption}
+)}}\label{class_product_aef536aa913ded637d649e28c4cd69f8a}
+
+
+Lecture des paramètres inscrits en F\-L\-A\-S\-H du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\-Data} & = buffer de données 0x1011-\/$>$0x1014 p\-Data2 = buffer de données 0x1024-\/$>$0x1025 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a0b7d8655f24efa5907c904e4530e5219}{\index{Product@{Product}!reset\-Device@{reset\-Device}}
+\index{reset\-Device@{reset\-Device}!Product@{Product}}
+\subsubsection[{reset\-Device}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::reset\-Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a0b7d8655f24efa5907c904e4530e5219}
+
+
+Reset le device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a7fd4eb92085eeb65994e07468ff7fc09}{\index{Product@{Product}!set\-Debug\-Msg@{set\-Debug\-Msg}}
+\index{set\-Debug\-Msg@{set\-Debug\-Msg}!Product@{Product}}
+\subsubsection[{set\-Debug\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::set\-Debug\-Msg (
+\begin{DoxyParamCaption}
+\item[{int}]{length, }
+\item[{unsigned char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_product_a7fd4eb92085eeb65994e07468ff7fc09}
+
+
+Prepare le message pour envoi à la E\-D\-G\-E R\-F. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em length} & = longueur du message buffer = data à envoyer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a5a5e6d45e85d396762a8cdba05fe7ede}{\index{Product@{Product}!set\-Product\-Updating@{set\-Product\-Updating}}
+\index{set\-Product\-Updating@{set\-Product\-Updating}!Product@{Product}}
+\subsubsection[{set\-Product\-Updating}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::set\-Product\-Updating (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_product_a5a5e6d45e85d396762a8cdba05fe7ede}
+
+
+Fonction d'acces au membre m\-\_\-updating. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em value} & = valeur a ecrire dans m\-\_\-updating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_af12fcb251cb2e01f8828adc642333ddb}{\index{Product@{Product}!start\-Request\-Firmware@{start\-Request\-Firmware}}
+\index{start\-Request\-Firmware@{start\-Request\-Firmware}!Product@{Product}}
+\subsubsection[{start\-Request\-Firmware}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::start\-Request\-Firmware (
+\begin{DoxyParamCaption}
+\item[{Q\-Url}]{url}
+\end{DoxyParamCaption}
+)}}\label{class_product_af12fcb251cb2e01f8828adc642333ddb}
+
+
+Telecharge un fichier depuis le serveur Volfoni. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em url} & = adresse internet du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_aa9c0e6fe872be85a4394b8f26cbf0478}{\index{Product@{Product}!update\-Progress@{update\-Progress}}
+\index{update\-Progress@{update\-Progress}!Product@{Product}}
+\subsubsection[{update\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}void Product\-::update\-Progress (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_product_aa9c0e6fe872be85a4394b8f26cbf0478}
+
+
+S\-L\-O\-T permettant de faire remonter de la classe C\-O\-M\-M l'état d'avancement d'une action. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em value} & = \% de la tache en cours \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_adc0d075e2ee1ab37d252f363b0ac4e9e}{\index{Product@{Product}!verify\-Device@{verify\-Device}}
+\index{verify\-Device@{verify\-Device}!Product@{Product}}
+\subsubsection[{verify\-Device}]{\setlength{\rightskip}{0pt plus 5cm}bool Product\-::verify\-Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Device\-Data} $\ast$}]{hex\-Data}
+\end{DoxyParamCaption}
+)}}\label{class_product_adc0d075e2ee1ab37d252f363b0ac4e9e}
+
+
+Vérifit que le fichier chargé en R\-A\-M est bien programmé en F\-L\-A\-S\-H du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true = O\-K, false sinon
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a056ec761c60d90fdbbca3e5bdee7cd16}{\index{Product@{Product}!write\-Device@{write\-Device}}
+\index{write\-Device@{write\-Device}!Product@{Product}}
+\subsubsection[{write\-Device}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::write\-Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_product_a056ec761c60d90fdbbca3e5bdee7cd16}
+
+
+Ecrit le fichier chargé en R\-A\-M dans la F\-L\-A\-S\-H du device. 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation \hypertarget{class_product_a75eb721fcc111f39d4ce2f5f0f705443}{\index{Product@{Product}!write\-Memory@{write\-Memory}}
+\index{write\-Memory@{write\-Memory}!Product@{Product}}
+\subsubsection[{write\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}Comm\-::\-Error\-Code Product\-::write\-Memory (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{Serial\-Number}
+\end{DoxyParamCaption}
+)}}\label{class_product_a75eb721fcc111f39d4ce2f5f0f705443}
+
+
+Ecriture en mémoire du device de l'adresse 0x1000 à 0x7\-B\-F\-F (taille = 0x6\-C00) 
+
+
+
+ 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+see Comm\-::\-Error\-Code
+\end{DoxyReturn}
+Release \-: D\-D\-A, 23.\-01.\-2013, creation 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+product.\-h\item 
+product.\-cpp\end{DoxyCompactItemize}

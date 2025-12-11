@@ -1,0 +1,82 @@
+\hypertarget{class_device}{\section{Device Class Reference}
+\label{class_device}\index{Device@{Device}}
+}
+
+
+{\ttfamily \#include $<$Device.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Families} \{ {\bfseries Unknown} = 0, 
+{\bfseries P\-I\-C18} = 0x01, 
+{\bfseries P\-I\-C24} = 0x02, 
+{\bfseries P\-I\-C32} = 0x03
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_a61d0d11badc9b4a386817087c4a68e83}{{\bfseries Device} (\hyperlink{class_device_data}{Device\-Data} $\ast$data)}\label{class_device_a61d0d11badc9b4a386817087c4a68e83}
+
+\item 
+\hypertarget{class_device_ade93cda9f8b70ce1e7126a5963a12278}{void {\bfseries set\-Unknown} (void)}\label{class_device_ade93cda9f8b70ce1e7126a5963a12278}
+
+\item 
+\hypertarget{class_device_a3af098da84a0765abea8150d838fa32b}{bool {\bfseries has\-Eeprom} (void)}\label{class_device_a3af098da84a0765abea8150d838fa32b}
+
+\item 
+\hypertarget{class_device_a469c9e13f6a69df39347e219fb01f22d}{bool {\bfseries has\-Config} (void)}\label{class_device_a469c9e13f6a69df39347e219fb01f22d}
+
+\item 
+\hypertarget{class_device_aac873f492b6a7a39e7d837874fe735cf}{bool {\bfseries has\-Config\-As\-Flash} (void)}\label{class_device_aac873f492b6a7a39e7d837874fe735cf}
+
+\item 
+\hypertarget{class_device_af265a927b208ce8c66985316778f0f33}{bool {\bfseries has\-Config\-As\-Fuses} (void)}\label{class_device_af265a927b208ce8c66985316778f0f33}
+
+\item 
+\hypertarget{class_device_ae0877c18fdfe123a179f549730db11b3}{unsigned int {\bfseries Get\-Device\-Address\-From\-Hex\-Address} (unsigned int hex\-Address, unsigned char \&type, bool \&included\-In\-Programmable\-Range, bool \&address\-Was\-Endof\-Range, unsigned int \&bytes\-Per\-Address\-And\-Type, unsigned int \&end\-Device\-Addressof\-Region)}\label{class_device_ae0877c18fdfe123a179f549730db11b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_aa358d8de53c074ac78a5f677c1988bbc}{Families {\bfseries family}}\label{class_device_aa358d8de53c074ac78a5f677c1988bbc}
+
+\item 
+\hypertarget{class_device_a671d9e53490b90702128e66898b100a1}{unsigned int {\bfseries bytes\-Per\-Packet}}\label{class_device_a671d9e53490b90702128e66898b100a1}
+
+\item 
+\hypertarget{class_device_afce6271b7da60eaa961c50a70f59f2f0}{unsigned int {\bfseries bytes\-Per\-Word\-F\-L\-A\-S\-H}}\label{class_device_afce6271b7da60eaa961c50a70f59f2f0}
+
+\item 
+\hypertarget{class_device_a11f63795a296f49528fd3e6f81a5a6e4}{unsigned int {\bfseries bytes\-Per\-Word\-E\-E\-P\-R\-O\-M}}\label{class_device_a11f63795a296f49528fd3e6f81a5a6e4}
+
+\item 
+\hypertarget{class_device_a2fee84ae55aa2b030e84c55bd862caa2}{unsigned int {\bfseries bytes\-Per\-Word\-Config}}\label{class_device_a2fee84ae55aa2b030e84c55bd862caa2}
+
+\item 
+\hypertarget{class_device_a4c46f3f943d9120a00da52c27cc8b43f}{unsigned int {\bfseries bytes\-Per\-Address\-F\-L\-A\-S\-H}}\label{class_device_a4c46f3f943d9120a00da52c27cc8b43f}
+
+\item 
+\hypertarget{class_device_a3feba1edb5a9537ee2531a64750aff56}{unsigned int {\bfseries bytes\-Per\-Address\-E\-E\-P\-R\-O\-M}}\label{class_device_a3feba1edb5a9537ee2531a64750aff56}
+
+\item 
+\hypertarget{class_device_a61284b6f8c2ee6c156f1b7b53f939cd9}{unsigned int {\bfseries bytes\-Per\-Address\-Config}}\label{class_device_a61284b6f8c2ee6c156f1b7b53f939cd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_a0b4df9590dca886d83d17063dda5e46a}{\hyperlink{class_device_data}{Device\-Data} $\ast$ {\bfseries device\-Data}}\label{class_device_a0b4df9590dca886d83d17063dda5e46a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides microcontroller device specific parameters, address calculations, and assembly code tools. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Device.\-h\item 
+Device.\-cpp\end{DoxyCompactItemize}

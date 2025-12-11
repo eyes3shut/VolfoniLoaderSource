@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>img/abort.png</file>
+        <file>img/open.png</file>
+        <file>img/writetqfp.png</file>
+        <file>img/erasetqfp.png</file>
+        <file>img/verify.png</file>
+        <file>img/stop.png</file>
+        <file>img/BlankCheck.png</file>
+        <file>img/Reset.png</file>
+        <file>img/help.png</file>
+        <file>img/smile.png</file>
+        <file>img/logoVolfoni.jpg</file>
+        <file>img/logoVOLFONI_dde.ico</file>
+        <file>img/connect.png</file>
+        <file>img/program.png</file>
+        <file>img/volfo160.ico</file>
+        <file>img/microchip.ico</file>
+        <file>img/microchip.png</file>
+        <file>img/green.png</file>
+        <file>img/red.png</file>
+        <file>img/internet.png</file>
+        <file>img/internet.ico</file>
+        <file>img/tools.png</file>
+        <file>img/about.png</file>
+        <file>img/exit.png</file>
+        <file>img/download.png</file>
+        <file>img/manager.png</file>
+        <file>img/download2.png</file>
+        <file>img/Connected.png</file>
+        <file>img/notConnected.png</file>
+        <file>img/VolfoTool.png</file>
+        <file>img/VolfoTool.ico</file>
+        <file>VolfoTool.icns</file>
+        <file>img/Edit_page.png</file>
+        <file>img/Save_as.png</file>
+    </qresource>
+</RCC>

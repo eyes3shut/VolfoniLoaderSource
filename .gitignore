@@ -1,0 +1,102 @@
+# Qt generated files
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile
+Makefile.*
+*.pro.user
+*.pro.user.*
+
+# Build directories
+build/
+debug/
+release/
+mac/
+windows/
+
+# Qt specific
+*.qm
+.qmake.stash
+
+# macOS
+.DS_Store
+*.app
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled Object files
+*.slo
+*.lo
+*.ko
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+
+# Executables
+*.out
+
+# Temporary files
+*~
+*.autosave
+*.bak
+*.old
+*.tmp
+
+# Log files
+*.log
+
+# Package files
+*.tar
+*.tar.gz
+*.zip
+
+# Core dumps
+core
+core.*
+
+# Object script
+object_script.*
+
+# Specific to this project
+Config/versioning.xml
+Updates/*.hex

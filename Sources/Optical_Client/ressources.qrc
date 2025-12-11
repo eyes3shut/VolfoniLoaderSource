@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>ressources/logo_volfoni.png</file>
+        <file>ressources/open.png</file>
+    </qresource>
+</RCC>

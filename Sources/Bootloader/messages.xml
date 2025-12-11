@@ -1,0 +1,215 @@
+<!DOCTYPE error_code>
+<codes>
+	<code>
+		<value>c01</value>
+		<label>Demarrage</label>
+	</code>
+	<code>
+		<value>c02</value>
+		<label>Mise en veille profonde</label>
+	</code>
+	<code>
+		<value>c03</value>
+		<label>Recherche presence signal IR</label>
+	</code>
+	<code>
+		<value>c04</value>
+		<label>Recherche patern IR</label>
+	</code>
+	<code>
+		<value>c05</value>
+		<label>Calcul frequence signal IR</label>
+	</code>
+	<code>
+		<value>c06</value>
+		<label>Calcul frequence signal IR SAMSUNG</label>
+	</code>
+	<code>
+		<value>c07</value>
+		<label>Calcul des temps d'ouverture</label>
+	</code>
+	<code>
+		<value>c08</value>
+		<label>Attente synchro IR</label>
+	</code>
+	<code>
+		<value>c09</value>
+		<label>Roue libre IR...</label>
+	</code>
+	<code>
+		<value>c10</value>
+		<label>Fin roue libre IR</label>
+	</code>
+	<code>
+		<value>c11</value>
+		<label>Recherche presence signal RF</label>
+	</code>
+	<code>
+		<value>c12</value>
+		<label>Calcul des temps d'ouverture</label>
+	</code>
+	<code>
+		<value>c13</value>
+		<label>Attente synchro RF</label>
+	</code>
+	<code>
+		<value>c14</value>
+		<label>Roue libre RF…</label>
+	</code>
+	<code>
+		<value>c15</value>
+		<label>Fin roue libre RF</label>
+	</code>
+	<code>
+		<value>c16</value>
+		<label>Preparation lunettes solaires</label>
+	</code>
+	<code>
+		<value>c17</value>
+		<label>Activation lunettes solaires</label>
+	</code>
+	<code>
+		<value>c18</value>
+		<label>Mesure de la tension batterie</label>
+	</code>
+	<code>
+		<value>c19</value>
+		<label>Probleme batterie</label>
+	</code>
+	<code>
+		<value>c20</value>
+		<label>Passage en veille IR</label>
+	</code>
+	<code>
+		<value>c21</value>
+		<label>Passage en veille RF</label>
+	</code>
+	<code>
+		<value>c28</value>
+		<label>Patern Mitsubishi detectee</label>
+	</code>
+	<code>
+		<value>c29</value>
+		<label>Patern XPAND CAC detectee</label>
+	</code>
+	<code>
+		<value>c30</value>
+		<label>Patern KONKA detectee</label>
+	</code>
+	<code>
+		<value>c31</value>
+		<label>Patern ARCELIK detectee</label>
+	</code>
+	<code>
+		<value>c32</value>
+		<label>Patern SONY detectee</label>
+	</code>
+	<code>
+		<value>c33</value>
+		<label>Patern PANASONIC detectee</label>
+	</code>
+	<code>
+		<value>c34</value>
+		<label>Patern LG detectee</label>
+	</code>
+	<code>
+		<value>c35</value>
+		<label>Patern SAMSUNG detectee</label>
+	</code>
+	<code>
+		<value>c36</value>
+		<label>Patern XPAND detectee</label>
+	</code>
+	<code>
+		<value>c37</value>
+		<label>Patern HISEN detectee</label>
+	</code>
+	<code>
+		<value>c38</value>
+		<label>Patern NVIDIA detectee</label>
+	</code>
+	<code>
+		<value>c39</value>
+		<label>Patern INCONNUE detectee</label>
+	</code>
+	<code>
+		<value>c40</value>
+		<label>Gain 0 applique</label>
+	</code>
+	<code>
+		<value>c41</value>
+		<label>Gain 1 applique</label>
+	</code>
+	<code>
+		<value>c42</value>
+		<label>Gain 2 applique</label>
+	</code>
+	<code>
+		<value>c43</value>
+		<label>Gain 3 applique</label>
+	</code>
+	<code>
+		<value>c44</value>
+		<label>Gain 4 applique</label>
+	</code>
+	<code>
+		<value>c45</value>
+		<label>Gain 5 applique</label>
+	</code>
+	<code>
+		<value>c46</value>
+		<label>Gain 6 applique</label>
+	</code>
+	<code>
+		<value>c47</value>
+		<label>Gain 7 applique</label>
+	</code>
+	<code>
+		<value>c48</value>
+		<label>Gain 8 applique</label>
+	</code>
+	<code>
+		<value>c49</value>
+		<label>Gain ? applique</label>
+	</code>
+	<code>
+		<value>c50</value>
+		<label>Synchro VESA</label>
+	</code>
+	<code>
+		<value>c51</value>
+		<label>Synchro DLP</label>
+	</code>
+	<code>
+		<value>c52</value>
+		<label>Synchro IR</label>
+	</code>
+	<code>
+		<value>c53</value>
+		<label>Synchro RF</label>
+	</code>
+	<code>
+		<value>c54</value>
+		<label>Mode Autotest</label>
+	</code>
+	<code>
+		<value>c55</value>
+		<label>Aucune synchro</label>
+	</code>
+	<code>
+		<value>c56</value>
+		<label>Commande PACK A</label>
+	</code>
+	<code>
+		<value>c57</value>
+		<label>Commande PACK B</label>
+	</code>
+	<code>
+		<value>c58</value>
+		<label>Commande DUAL VIEW</label>
+	</code>
+	<code>
+		<value>c59</value>
+		<label>Commande FORCE STOP</label>
+	</code>
+</codes>

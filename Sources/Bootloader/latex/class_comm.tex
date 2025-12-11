@@ -1,0 +1,181 @@
+\hypertarget{class_comm}{\section{Comm Class Reference}
+\label{class_comm}\index{Comm@{Comm}}
+}
+
+
+{\ttfamily \#include $<$Comm.\-h$>$}
+
+Inheritance diagram for Comm\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_comm}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_comm_1_1_boot_info}{Boot\-Info}
+\item 
+struct \hyperlink{struct_comm_1_1_memory_region}{Memory\-Region}
+\item 
+struct \hyperlink{struct_comm_1_1_read_packet}{Read\-Packet}
+\item 
+struct \hyperlink{struct_comm_1_1_write_packet}{Write\-Packet}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Error\-Code} \{ \\*
+{\bfseries Success} = 0, 
+{\bfseries Not\-Connected}, 
+{\bfseries Fail}, 
+{\bfseries Incorrect\-Command}, 
+\\*
+{\bfseries Timeout}, 
+{\bfseries No\-Data}, 
+{\bfseries Other} = 0x\-F\-F
+ \}
+\item 
+enum {\bfseries Packet\-Cmd} \{ \\*
+{\bfseries Q\-U\-E\-R\-Y\-\_\-\-D\-E\-V\-I\-C\-E} = 0x02, 
+{\bfseries U\-N\-L\-O\-C\-K\-\_\-\-C\-O\-N\-F\-I\-G} = 0x03, 
+{\bfseries E\-R\-A\-S\-E\-\_\-\-D\-E\-V\-I\-C\-E} = 0x04, 
+{\bfseries P\-R\-O\-G\-R\-A\-M\-\_\-\-D\-E\-V\-I\-C\-E} = 0x05, 
+\\*
+{\bfseries P\-R\-O\-G\-R\-A\-M\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E} = 0x06, 
+{\bfseries G\-E\-T\-\_\-\-D\-A\-T\-A} = 0x07, 
+{\bfseries R\-E\-S\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E} = 0x08, 
+{\bfseries G\-E\-T\-\_\-\-M\-S\-G} = 0x0\-B, 
+\\*
+{\bfseries P\-R\-O\-G\-R\-A\-M\-\_\-\-P\-A\-R\-A\-M} = 0x11, 
+{\bfseries R\-E\-A\-D\-\_\-\-P\-A\-R\-A\-M} = 0x12, 
+{\bfseries I\-N\-V\-E\-R\-S\-\_\-\-G\-D} = 0x13, 
+{\bfseries E\-R\-A\-S\-E\-\_\-\-D\-A\-T\-A} = 0x10
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comm_a47bb6db9ec3fcb7be0f4da523fab5447}{void {\bfseries Get\-\_\-\-Msg\-\_\-\-Debug} (int length, unsigned char $\ast$buffer)}\label{class_comm_a47bb6db9ec3fcb7be0f4da523fab5447}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comm_ae87942c62a9641888cd92ead22a2af61}{void {\bfseries Set\-Progress\-Bar} (int new\-Value)}\label{class_comm_ae87942c62a9641888cd92ead22a2af61}
+
+\item 
+\hypertarget{class_comm_a5d5d22122450cd3c655b0bcb401828e8}{void {\bfseries Set\-Readed\-Debug} (unsigned char $\ast$data\-Debug)}\label{class_comm_a5d5d22122450cd3c655b0bcb401828e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comm_a63b64b192fd2ff92fcef0887eef3babd}{Q\-String {\bfseries Error\-String} (Error\-Code error\-Code) const }\label{class_comm_a63b64b192fd2ff92fcef0887eef3babd}
+
+\item 
+\hypertarget{class_comm_a6688b8d7249aaa28fd65f4419860ef2f}{int {\bfseries Poll\-U\-S\-B} (void)}\label{class_comm_a6688b8d7249aaa28fd65f4419860ef2f}
+
+\item 
+\hypertarget{class_comm_a55b9b609aa97fdf186fe778936bbc2ae}{int {\bfseries Poll\-U\-S\-B\-App} (void)}\label{class_comm_a55b9b609aa97fdf186fe778936bbc2ae}
+
+\item 
+\hypertarget{class_comm_a349ce7d4c976ea2d75f1aa070a6d4b53}{Error\-Code {\bfseries open} (void)}\label{class_comm_a349ce7d4c976ea2d75f1aa070a6d4b53}
+
+\item 
+\hypertarget{class_comm_a7fa7ac070740509642233c59fb0e26b7}{Error\-Code {\bfseries open\-App} (void)}\label{class_comm_a7fa7ac070740509642233c59fb0e26b7}
+
+\item 
+\hypertarget{class_comm_a9a9a583a047da6bfbdaccc77b3fba8b0}{void {\bfseries close} (void)}\label{class_comm_a9a9a583a047da6bfbdaccc77b3fba8b0}
+
+\item 
+\hypertarget{class_comm_aac70cb6f53c65a53542ae391469e61ff}{void {\bfseries close\-App} (void)}\label{class_comm_aac70cb6f53c65a53542ae391469e61ff}
+
+\item 
+\hypertarget{class_comm_a502663d454a87f8df81ab50e0bfccb57}{bool {\bfseries is\-Connected} (void)}\label{class_comm_a502663d454a87f8df81ab50e0bfccb57}
+
+\item 
+\hypertarget{class_comm_abb86861f3a57a76b49d9facd9ae91011}{bool {\bfseries is\-Connected\-App} (void)}\label{class_comm_abb86861f3a57a76b49d9facd9ae91011}
+
+\item 
+\hypertarget{class_comm_a86f5ecbc22ae4a7b18eb9981a0e923b0}{void {\bfseries set\-Connected} (bool value)}\label{class_comm_a86f5ecbc22ae4a7b18eb9981a0e923b0}
+
+\item 
+\hypertarget{class_comm_a2a3f0dd067d6b3c0c2266633fa5b3a04}{void {\bfseries set\-Connected\-App} (bool value)}\label{class_comm_a2a3f0dd067d6b3c0c2266633fa5b3a04}
+
+\item 
+\hypertarget{class_comm_af65ceffe4526ec70bbbc24d459d421c2}{void {\bfseries Reset} (void)}\label{class_comm_af65ceffe4526ec70bbbc24d459d421c2}
+
+\item 
+\hypertarget{class_comm_a793319f814dbe0227d17473baa7eef0c}{Error\-Code {\bfseries Get\-Data} (unsigned long address, unsigned char bytes\-Per\-Packet, unsigned char bytes\-Per\-Address, unsigned char bytes\-Per\-Word, unsigned long end\-Address, unsigned char $\ast$data)}\label{class_comm_a793319f814dbe0227d17473baa7eef0c}
+
+\item 
+\hypertarget{class_comm_ad6c0125a9f071f05e50e2544ef075030}{Error\-Code {\bfseries Program} (unsigned long address, unsigned char bytes\-Per\-Packet, unsigned char bytes\-Per\-Address, unsigned char bytes\-Per\-Word, unsigned char device\-Family, unsigned long end\-Address, unsigned char $\ast$data)}\label{class_comm_ad6c0125a9f071f05e50e2544ef075030}
+
+\item 
+\hypertarget{class_comm_a87d0001ca4e724dbef9548879b724b8a}{Error\-Code {\bfseries Erase} (void)}\label{class_comm_a87d0001ca4e724dbef9548879b724b8a}
+
+\item 
+\hypertarget{class_comm_a5d44c68158d23cf53fe7edb207f2cbae}{Error\-Code {\bfseries Erase\-Data} (void)}\label{class_comm_a5d44c68158d23cf53fe7edb207f2cbae}
+
+\item 
+\hypertarget{class_comm_aac1855c620be0877bae40fea30a2b97c}{Error\-Code {\bfseries Lock\-Unlock\-Config} (bool lock)}\label{class_comm_aac1855c620be0877bae40fea30a2b97c}
+
+\item 
+\hypertarget{class_comm_a4b5020eafedd9de0965fccf4b5b6157f}{Error\-Code {\bfseries Read\-Bootloader\-Info} (\hyperlink{struct_comm_1_1_boot_info}{Boot\-Info} $\ast$boot\-Info)}\label{class_comm_a4b5020eafedd9de0965fccf4b5b6157f}
+
+\item 
+\hypertarget{class_comm_aa9f87f06d3ca9ad201ade588e457630d}{Error\-Code {\bfseries Send\-Packet} (unsigned char $\ast$data, int size)}\label{class_comm_aa9f87f06d3ca9ad201ade588e457630d}
+
+\item 
+\hypertarget{class_comm_a853ec52ada80f1fd190ac14a90421da1}{Error\-Code {\bfseries Receive\-Packet} (unsigned char $\ast$data, int size)}\label{class_comm_a853ec52ada80f1fd190ac14a90421da1}
+
+\item 
+\hypertarget{class_comm_a10e94363ebc45dec03ee3e002f666a12}{Error\-Code {\bfseries Send\-Packet\-App} (unsigned char $\ast$data, int size)}\label{class_comm_a10e94363ebc45dec03ee3e002f666a12}
+
+\item 
+\hypertarget{class_comm_a32b1a3109404f4fc98355d2ece7c6168}{Error\-Code {\bfseries Receive\-Packet\-App} (unsigned char $\ast$data, int size)}\label{class_comm_a32b1a3109404f4fc98355d2ece7c6168}
+
+\item 
+\hypertarget{class_comm_a6d73ae142486125f5d3db3d65b7eea4f}{Error\-Code {\bfseries Get\-\_\-\-Msg} (unsigned char $\ast$data)}\label{class_comm_a6d73ae142486125f5d3db3d65b7eea4f}
+
+\item 
+\hypertarget{class_comm_ab5976f11d022bd4b8be030a26abac07e}{Error\-Code {\bfseries Program\-\_\-\-Param} (unsigned char $\ast$data)}\label{class_comm_ab5976f11d022bd4b8be030a26abac07e}
+
+\item 
+\hypertarget{class_comm_ab35cb1256adb416f752e4ceb7f5b9f83}{Error\-Code {\bfseries Read\-\_\-\-Param} (unsigned char $\ast$data)}\label{class_comm_ab35cb1256adb416f752e4ceb7f5b9f83}
+
+\item 
+\hypertarget{class_comm_a091f6e221bcd0ae2b78f02c9146e7acf}{Error\-Code {\bfseries Inversion\-\_\-\-G\-D} (void)}\label{class_comm_a091f6e221bcd0ae2b78f02c9146e7acf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comm_a564808358936afee5aa9aeaef33c47aa}{static const int {\bfseries Sync\-Wait\-Time} = 2000}\label{class_comm_a564808358936afee5aa9aeaef33c47aa}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comm_a7bb53caa8d4f2fe773213346371da4ac}{hid\-\_\-device $\ast$ {\bfseries boot\-\_\-device}}\label{class_comm_a7bb53caa8d4f2fe773213346371da4ac}
+
+\item 
+\hypertarget{class_comm_a2d79afd0cd262f3c5537702820ed2002}{hid\-\_\-device $\ast$ {\bfseries boot\-\_\-device\-App}}\label{class_comm_a2d79afd0cd262f3c5537702820ed2002}
+
+\item 
+\hypertarget{class_comm_a20165744b508b3b9bb7d7dee32a5cdd5}{bool {\bfseries connected}}\label{class_comm_a20165744b508b3b9bb7d7dee32a5cdd5}
+
+\item 
+\hypertarget{class_comm_ae8bfa142d8be6223611f44c0eafdba09}{bool {\bfseries connected\-App}}\label{class_comm_ae8bfa142d8be6223611f44c0eafdba09}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides low level H\-I\-D bootloader communication. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Comm.\-h\item 
+Comm.\-cpp\end{DoxyCompactItemize}

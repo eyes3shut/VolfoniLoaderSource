@@ -1,0 +1,60 @@
+\hypertarget{class_hex_importer}{\section{Hex\-Importer Class Reference}
+\label{class_hex_importer}\index{Hex\-Importer@{Hex\-Importer}}
+}
+
+
+{\ttfamily \#include $<$Import\-Export\-Hex.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Error\-Code} \{ \\*
+{\bfseries Success} = 0, 
+{\bfseries Could\-Not\-Open\-File}, 
+{\bfseries None\-In\-Range}, 
+{\bfseries Error\-In\-Hex\-File}, 
+\\*
+{\bfseries Insufficient\-Memory}
+ \}
+\item 
+enum {\bfseries H\-E\-X32\-\_\-\-R\-E\-C\-O\-R\-D} \{ {\bfseries D\-A\-T\-A} = 0x00, 
+{\bfseries E\-N\-D\-\_\-\-O\-F\-\_\-\-F\-I\-L\-E} = 0x01, 
+{\bfseries E\-X\-T\-E\-N\-D\-E\-D\-\_\-\-S\-E\-G\-M\-E\-N\-T\-\_\-\-A\-D\-D\-R} = 0x02, 
+{\bfseries E\-X\-T\-E\-N\-D\-E\-D\-\_\-\-L\-I\-N\-E\-A\-R\-\_\-\-A\-D\-D\-R} = 0x04
+ \}
+\item 
+enum {\bfseries P\-R\-O\-G\-\_\-\-W\-O\-R\-D\-\_\-\-W\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E} \{ {\bfseries P\-I\-C18\-\_\-\-P\-R\-O\-G\-\_\-\-W\-O\-R\-D\-\_\-\-W\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E} = 0x02, 
+{\bfseries P\-I\-C24\-\_\-\-P\-R\-O\-G\-\_\-\-W\-O\-R\-D\-\_\-\-W\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E} = 0x04, 
+{\bfseries P\-I\-C32\-\_\-\-P\-R\-O\-G\-\_\-\-W\-O\-R\-D\-\_\-\-W\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E} = 0x04
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_importer_a284c1fe7b39e1463afee9cbaaf660fbb}{Error\-Code {\bfseries Import\-Hex\-File} (Q\-String file\-Name, \hyperlink{class_device_data}{Device\-Data} $\ast$data, \hyperlink{class_device}{Device} $\ast$device)}\label{class_hex_importer_a284c1fe7b39e1463afee9cbaaf660fbb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hex_importer_a0e686c31cec32218ac77df3927f05865}{bool {\bfseries has\-End\-Of\-File\-Record}}\label{class_hex_importer_a0e686c31cec32218ac77df3927f05865}
+
+\item 
+\hypertarget{class_hex_importer_a75ce45deb3b856e214cf626e3396cf3b}{bool {\bfseries has\-Config\-Bits}}\label{class_hex_importer_a75ce45deb3b856e214cf626e3396cf3b}
+
+\item 
+\hypertarget{class_hex_importer_ad69635e8e091eabbe6cca9afaa4ed976}{bool {\bfseries file\-Exceeds\-Flash}}\label{class_hex_importer_ad69635e8e091eabbe6cca9afaa4ed976}
+
+\item 
+\hypertarget{class_hex_importer_a5e91ed258d03ed0f9bc3b23fb56dfd0b}{Q\-List$<$ \hyperlink{struct_device_data_1_1_memory_range}{Device\-Data\-::\-Memory\-Range} $>$ {\bfseries rawimport}}\label{class_hex_importer_a5e91ed258d03ed0f9bc3b23fb56dfd0b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reads H\-E\-X files into an in-\/memory \hyperlink{class_device_data}{Device\-Data} object. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Import\-Export\-Hex.\-h\item 
+Import\-Export\-Hex.\-cpp\end{DoxyCompactItemize}
