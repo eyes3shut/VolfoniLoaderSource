@@ -1,19 +1,11 @@
 # Qt generated files
 *.o
 *.obj
-*.a
 *.so
-*.dylib
-*.dll
-*.exe
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
 ui_*.h
-Makefile
-Makefile.*
-*.pro.user
-*.pro.user.*
 
 # Build directories
 build/
@@ -23,7 +15,6 @@ mac/
 windows/
 
 # Qt specific
-*.qm
 .qmake.stash
 
 # macOS
