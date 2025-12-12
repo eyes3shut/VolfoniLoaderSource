@@ -6,7 +6,7 @@ moc_*.cpp
 moc_*.h
 qrc_*.cpp
 ui_*.h
-.idx
+*.idx
 
 # Build directories
 build/
