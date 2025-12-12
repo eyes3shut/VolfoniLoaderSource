@@ -32,8 +32,7 @@ MainWindow::MainWindow(QWidget *parent, QString fileLang)
       log_adminUser("administrator"),
       pwd_adminUser("volfoni123"),
       widthWindow(900),
-//Modif AT      versionSoftWare("03.08.09"),// a updater si nouvelle version publiée
-      versionSoftWare("03.08.AT"),// a updater si nouvelle version publiée
+      versionSoftWare("03.08.09"),// a updater si nouvelle version publiée
       _fileLang(fileLang)
 
 {

@@ -58,6 +58,7 @@ HEADERS  += mainwindow.h \
 # OS is being used
 #-------------------------------------------------
 win32: LIBS += -L../HIDAPI/windows
+win64: LIBS += -L../HIDAPI/windows
 macx: LIBS += -L../../../HIDAPI/mac
 unix: !macx: LIBS += -L../HIDAPI/linux
 LIBS += -lHIDAPI
