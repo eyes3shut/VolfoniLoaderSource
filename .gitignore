@@ -11,8 +11,6 @@ ui_*.h
 build/
 debug/
 release/
-mac/
-windows/
 
 # Qt specific
 .qmake.stash
@@ -23,21 +21,6 @@ windows/
 .AppleDouble
 .LSOverride
 ._*
-
-# Xcode
-*.xcodeproj/
-*.xcworkspace/
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-xcuserdata/
-*.moved-aside
-DerivedData/
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
 
 # IDE
 .vscode/
@@ -50,43 +33,6 @@ DerivedData/
 *.slo
 *.lo
 *.ko
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
-
-# Executables
-*.out
-
-# Temporary files
-*~
-*.autosave
-*.bak
-*.old
-*.tmp
-
-# Log files
-*.log
-
-# Package files
-*.tar
-*.tar.gz
-*.zip
-
-# Core dumps
-core
-core.*
-
-# Object script
-object_script.*
 
 # Specific to this project
 Config/versioning.xml
